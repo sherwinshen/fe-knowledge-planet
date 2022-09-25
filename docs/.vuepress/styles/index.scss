@@ -1,0 +1,11 @@
+:root {
+  // brand colors
+  --c-brand: #675fe8;
+  --c-brand-light: #756cfa;
+}
+
+html.dark {
+  // brand colors
+  --c-brand: #756cfa;
+  --c-brand-light: #675fe8;
+}

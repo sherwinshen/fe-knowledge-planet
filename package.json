@@ -1,0 +1,17 @@
+{
+  "name": "fe-blog",
+  "version": "1.0.0",
+  "description": "sherwin's blog library",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@vuepress/plugin-docsearch": "^2.0.0-beta.51",
+    "vuepress": "^2.0.0-beta.51"
+  }
+}
