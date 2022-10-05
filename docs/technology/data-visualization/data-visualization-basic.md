@@ -1,14 +1,14 @@
 # 数据可视化之入门指南
 
-![](/images/docs/data-visualization-basic-main.png)
+![data-visualization-basic-main.png](https://www.z4a.net/images/2022/10/05/data-visualization-basic-main.png)
 
-> 前言：本文为数据可视化专题篇的开篇内容——“入门指南”，主要介绍了前端数据可视化主流的几种技术选型，并且给出基础使用案例，其中重点关注 Canvas、SVG、ECharts、AntV 等内容，参考自[实战「慕课外卖」数据大屏](http://www.youbaobao.xyz/datav-docs/)。代码地址 👉 [data-visualization（Github）](https://github.com/sherwinshen/data-visualization)
+> 概述：本文为数据可视化专题篇的开篇内容——“入门指南”，主要介绍了前端数据可视化主流的几种技术选型，并且给出基础使用案例，其中重点关注 Canvas、SVG、ECharts、AntV 等内容，参考自[实战「慕课外卖」数据大屏](http://www.youbaobao.xyz/datav-docs/)。代码地址 👉 [data-visualization（Github）](https://github.com/sherwinshen/data-visualization)
 
 ## 1. 序言
 
 数据可视化，是关于数据视觉表现形式的科学技术研究，其中，这种数据的视觉表现形式被定义为，一种以某种概要形式抽提出来的信息，包括相应信息单位的各种属性和变量（源自百度百科）。当前，在前端领域数据可视化的技术五花八门非常之多，以下为常见的技术选型：
 
-![](/images/docs/datav-tech-arch.png "可选标题")
+![datav-tech-arch.png](https://www.z4a.net/images/2022/10/05/datav-tech-arch.png)
 
 <center>（图片来自实战「慕课外卖」数据大屏）</center>
 
@@ -375,7 +375,7 @@ WebGL（Web Graphics Library）是一种 3D 绘图协议，其可以为 HTML5 Ca
 
 [AntV](https://antv.gitee.io/zh/) 是蚂蚁金服全新一代数据可视化解决方案，致力于提供一套简单方便、专业可靠、无限可能的数据可视化最佳实践。AntV 包括以下解决方案：
 
-![](/images/docs/antv.png)
+![antv.png](https://www.z4a.net/images/2022/10/05/antv.png)
 
 ##### 2.2.2.1 G2
 

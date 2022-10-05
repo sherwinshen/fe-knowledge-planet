@@ -1,8 +1,8 @@
 # 前端脚手架之基础原理
 
-![](/images/docs/cli-principle-main.png)
+![cli-principle-main.png](https://www.z4a.net/images/2022/10/05/cli-principle-main.png)
 
-> 前言：在不同项目获多人协作的开发过程中，一些重复执行的工作能够通过前端脚手架自动化地完成，从而提高了研发效率；同时前端脚手架也能够将这些重复执行的工作建立一套标准的规范，从而实现了研发的一致性。本文主要介绍了前端脚手架的基础原理（包括安装过程和执行过程），以便帮助前端工程师更好地理解和开发脚手架工具。
+> 概述：在不同项目获多人协作的开发过程中，一些重复执行的工作能够通过前端脚手架自动化地完成，从而提高了研发效率；同时前端脚手架也能够将这些重复执行的工作建立一套标准的规范，从而实现了研发的一致性。本文主要介绍了前端脚手架的基础原理（包括安装过程和执行过程），以便帮助前端工程师更好地理解和开发脚手架工具。
 
 ## 1. 序言
 
@@ -22,7 +22,7 @@
 
 ## 2. 脚手架安装
 
-执行脚手架安装命令后究竟发生了什么 ❓
+执行脚手架安装命令后究竟发生了什么？
 
 1. 安装依赖包到`node` 的`lib/node_modules`下；
 2. 解析`package.json `内容，如果存在`bin`字段，则根据`bin`字段的内容在 `node` 的 `bin` 目录下配置软链接，格式为`软链接名称：实际指向内容`。注意，我们实际使用的命令就是`bin`字段下设置的软链接名称，而非依赖包名字。
@@ -39,9 +39,9 @@
 }
 ```
 
-![](/images/docs/cli-link.png)
+![cli-link.png](https://www.z4a.net/images/2022/10/05/cli-link.png)
 
-:::tip 执行 npm init vue@latest 又发生了什么？
+:::tip 💡执行 npm init vue@latest 又发生了什么？
 
 npm init vue 等价于 npm exec create-vue，这个命令允许你从 npm 包（本地或远程）中运行任意命令，详见 [npm 官方文档](https://docs.npmjs.com/cli/v7/commands/npm-init)。因此，我们全局安装 `npm i -g create-vue`，然后执行对应命令`create-vue`，也是同样的效果。
 
@@ -82,17 +82,17 @@ vue create my-demo --force true --registry https://registry.npm.taobao.org # 完
 5. `vue.js`解析 command/options
 6. `vue.js`执行 command/options
 
-![](/images/docs/cli-process.png)
+![cli-process.png](https://www.z4a.net/images/2022/10/05/cli-process.png)
 
-::: tip 如何找到 vue 命令对应的可执行文件 ❓
+::: tip 💡如何找到 vue 命令对应的可执行文件？
 
 首先在终端执行`which vue`并根据结果进入对应文件所在的目录，然后在终端执行`ls -alF`，从结果可以看到 vue 命令对应的是一个软连接，实际指向的是`../lib/node_modules/vue-cli/bin/vue`，这就是我们最终执行的文件。
 
-![](/images/docs/which-vue.png)
+![which-vue.png](https://www.z4a.net/images/2022/10/05/which-vue.png)
 
 :::
 
-::: tip 可执行文件是如何通过 node 执行的 ❓
+::: tip 💡可执行文件是如何通过 node 执行的？
 
 打开可执行文件我们可以在顶部看到这样一行代码`#!/usr/bin/env node`，这表示从环境变量中找 node 然后通过 node 来执行这个文件。注意不要写成`#!/usr/bin/node` ，这种写法是固定了 node 的路径，但是每个人电脑安装的路径是不一定的，我们应该从环境变量里去找 node 路径。
 

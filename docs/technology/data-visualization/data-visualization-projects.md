@@ -1,8 +1,8 @@
 # 数据可视化之项目示例
 
-![](/images/docs/data-visualization-projects-main.png)
+![data-visualization-projects-main.png](https://www.z4a.net/images/2022/10/05/data-visualization-projects-main.png)
 
-> 前言：本文针对数据可视化中常见的应用场景给出了相关的项目示例，主要包括：
+> 概述：本文针对数据可视化中常见的应用场景给出了相关的项目示例，主要包括：
 >
 > - 数据报表项目（ECharts），代码地址 👉 [data-visualization-report](https://github.com/sherwinshen/data-visualization-report)
 > - 数据大屏项目（G2Plot + ECharts），代码地址 👉 [data-visualization-screen](https://github.com/sherwinshen/data-visualization-screen)
@@ -11,7 +11,7 @@
 
 ## 1. 数据报表项目
 
-![](/images/docs/data-visualization-report.png)
+![data-visualization-report.png](https://www.z4a.net/images/2022/10/05/data-visualization-report.png)
 
 ### 1.1 技术栈
 
@@ -24,7 +24,7 @@
 
 ## 2. 数据大屏项目
 
-![](/images/docs/data-visualization-screen.gif)
+![data-visualization-screen.gif](https://www.z4a.net/images/2022/10/05/data-visualization-screen.gif)
 
 ### 2.1 技术栈
 
@@ -42,13 +42,13 @@
 
 基于 [vue3-count-to](https://www.npmjs.com/package/vue3-count-to) 依赖的组件，通过设定 startVal 和 endVal 实现数字滚动的动态效果。
 
-<img src="/images/docs/count-to.gif" alt="" style="zoom:54%;" />
+<img src="https://www.z4a.net/images/2022/10/05/count-to.gif" alt="" style="zoom:64%;" />
 
 #### 2.2.3 自动轮播组件
 
 [auto-scroll 组件](https://github.com/sherwinshen/data-visualization-screen/blob/master/src/components/auto-scroll.vue)，在设定表头和内容后能够自动向上滚动轮播内容（也可借助 Swiper 库来实现）。
 
-![](/images/docs/auto-scroll.gif)
+![auto-scroll.gif](https://www.z4a.net/images/2022/10/05/auto-scroll.gif)
 
 ---
 

@@ -1,14 +1,14 @@
 # 前端统一代码规范指南
 
-![](/images/docs/code-style-main.png)
+![code-style-main.png](https://www.z4a.net/images/2022/10/05/code-style-main.png)
 
-> 前言：本文主要介绍了使用 ESLint、Prettier、StyleLint、lint-staged 和 husky 等工具统一代码风格；使用 commitizen 和 cz-customizable 等工具规范 commit message；VSCode 插件和 EditorConfig 配置等内容。代码地址 👉 [vue3-project-startkit](https://github.com/sherwinshen/vue3-project-startkit)
+> 概述：本文主要介绍了使用 ESLint、Prettier、StyleLint、lint-staged 和 husky 等工具统一代码风格；使用 commitizen 和 cz-customizable 等工具规范 commit message；VSCode 插件和 EditorConfig 配置等内容。代码地址 👉 [vue3-project-startkit](https://github.com/sherwinshen/vue3-project-startkit)
 
 ## 1. 编辑器配置
 
 ### 1.1 VSCode 配置
 
-![VSCode配置方式](/images/docs/vscode-setting.png)
+![vscode-setting.png](https://www.z4a.net/images/2022/10/05/vscode-setting.png)
 
 所有 VSCode 配置自定义的内容（包括插件部分）都在 setting.json 文件中，以下为参考配置：
 
@@ -70,7 +70,7 @@ trim_trailing_whitespace = true # 去除行尾的任意空白字符
 
 ### 2.1 工具介绍
 
-![](/images/docs/code-style-plugin.png)
+![code-style-plugin.png](https://www.z4a.net/images/2022/10/05/code-style-plugin.png)
 
 - [ESLint](https://eslint.org/) 是一款用于查找并报告代码中问题的工具
 - [Stylelint](https://stylelint.io/) 是一个强大的现代 CSS 检测器

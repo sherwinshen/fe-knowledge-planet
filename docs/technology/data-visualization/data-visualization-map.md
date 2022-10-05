@@ -1,8 +1,8 @@
 # 数据可视化之地图篇
 
-![](/images/docs/data-visualization-map-main.png)
+![data-visualization-map-main.png](https://www.z4a.net/images/2022/10/05/data-visualization-map-main.png)
 
-> 在数据可视化中，地图是非常常见的应用场景。地图可视化可以简单认为是底图+点线面的绘制，本文主要介绍了在 ECharts 下基于 Geojson 的地图绘制，以及百度地图和高德地图的基础使用，参考自[实战「慕课外卖」数据大屏](http://www.youbaobao.xyz/datav-docs/)。代码地址 👉 [data-visualization（Github）](https://github.com/sherwinshen/data-visualization)
+> 概述：在数据可视化中，地图是非常常见的应用场景。地图可视化可以简单认为是底图+点线面的绘制，本文主要介绍了在 ECharts 下基于 Geojson 的地图绘制，以及百度地图和高德地图的基础使用，参考自[实战「慕课外卖」数据大屏](http://www.youbaobao.xyz/datav-docs/)。代码地址 👉 [data-visualization（Github）](https://github.com/sherwinshen/data-visualization)
 
 ## 1. Geojson
 
@@ -18,6 +18,7 @@
 2. series-map + 自动生成的 Geo 组件（默认情况下，series-map 会生成内部专用的 geo 组件）
 3. series-map + geoIndex 指定 Geo 组件
 
+::: details 点击查看代码
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -101,6 +102,7 @@
   </body>
 </html>
 ```
+:::
 
 ## 2. 百度地图
 
@@ -113,6 +115,8 @@
 3. 创建地图 Map 实例
 4. 设置中心点坐标
 5. 地图初始化，同时设置地图展示级别
+
+::: details 点击查看代码
 
 ```html
 <!DOCTYPE html>
@@ -153,6 +157,7 @@
   </body>
 </html>
 ```
+:::
 
 在对性能要求比较高的场景下，可以选择异步加载百度地图，从而加快首屏的渲染速度。
 
@@ -207,15 +212,15 @@ map.addControl(zoomCtrl);
 
 百度地图-覆盖物 👉 [源码](https://github.com/sherwinshen/data-visualization/blob/master/maps/bmap/bmap-draw.html)
 
-![](/images/docs/bmap-draw.png)
+<img src="https://www.z4a.net/images/2022/10/05/bmap-draw.png" alt=" " style="zoom:28%;" />
 
 百度地图-动画 👉 [源码](https://github.com/sherwinshen/data-visualization/blob/master/maps/bmap/bmap-animation.html)
 
-![](/images/docs/bmap-animation.gif)
+<img src="https://www.z4a.net/images/2022/10/05/bmap-animation.gif" alt=" " style="zoom:95%;" />
 
 百度地图-轨迹覆盖物 👉 [源码](https://github.com/sherwinshen/data-visualization/blob/master/maps/bmap/bmap-track.html)
 
-<img src="/images/docs/bmap-track.gif" alt=" " style="zoom:125%;" />
+<img src="https://www.z4a.net/images/2022/10/05/bmap-track.gif" alt=" " style="zoom:120%;" />
 
 #### 2.2.2 基于 MapVGL
 
@@ -228,8 +233,9 @@ map.addControl(zoomCtrl);
 5. 准备好规范化坐标数据
 6. 关联图层与数据
 
-![](/images/docs/mapvgl.png)
+![](https://www.z4a.net/images/2022/10/05/mapvgl.png)
 
+::: details 点击查看代码
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -288,20 +294,21 @@ map.addControl(zoomCtrl);
   </body>
 </html>
 ```
+:::
 
 ### 2.3 案例
 
 飞线动画 👉 [源码](https://github.com/sherwinshen/data-visualization/blob/master/maps/bmap/bmap-line.html)
 
-![](/images/docs/bmap-line.gif)
+<img src="https://www.z4a.net/images/2022/10/05/bmap-line.gif" style="zoom:130%;" />
 
 炫酷飞线图 👉 [源码](https://github.com/sherwinshen/data-visualization/blob/master/maps/bmap/bmap-fly.html)
 
-![](/images/docs/bmap-fly.gif)
+![](https://www.z4a.net/images/2022/10/05/bmap-fly.gif)
 
 3D 建筑图 👉 [源码](https://github.com/sherwinshen/data-visualization/blob/master/maps/bmap/bmap-shapeLayer.html)
 
-![](/images/docs/bmap-3d.png)
+![](https://www.z4a.net/images/2022/10/05/bmap-3d.png)
 
 ## 3. 高德地图
 
@@ -309,13 +316,15 @@ map.addControl(zoomCtrl);
 
 ### 3.1 基础使用
 
-![](/images/docs/map-comp.png)
+![](https://www.z4a.net/images/2022/10/05/map-comp.png)
 
 1. 引入 js 库（需要申请密钥）
 2. 编写容器组件
 3. 初始化 Map 对象
 4. 设置图层
 5. 将图层添加到地图
+
+::: details 点击查看代码
 
 ```html
 <!DOCTYPE html>
@@ -366,6 +375,7 @@ map.addControl(zoomCtrl);
   </body>
 </html>
 ```
+:::
 
 高德地图也同样支持异步加载，在对性能要求比较高的场景下，异步加载百度地图加快首屏的渲染速度。
 
@@ -386,8 +396,9 @@ window.onload = () => {
 
 #### 3.2.1 基于 JS API
 
-![](/images/docs/amap-basic.png)
+![](https://www.z4a.net/images/2022/10/05/amap-basic.png)
 
+::: details 点击查看代码
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -479,13 +490,15 @@ window.onload = () => {
   </body>
 </html>
 ```
+:::
 
 #### 3.2.2 基于 LOCA
 
 [Loca](https://lbs.amap.com/api/loca-v2/api) 是一个基于高德 JS API 地图、纯 JavaScript 实现的地理空间数据可视化渲染引擎。其特点是在无需了解高德 JS API 的情况下，通过灵活的配置，可以快速制作出如散点、轨迹、区面、热力图等地理位置相关的可视化作品。
 
-![](/images/docs/amap-loca.png)
+![](https://www.z4a.net/images/2022/10/05/amap-loca.png)
 
+::: details 点击查看代码
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -554,6 +567,7 @@ window.onload = () => {
   </body>
 </html>
 ```
+:::
 
 ### 3.3 案例
 

@@ -5,9 +5,9 @@ export default defineUserConfig({
   lang: "zh-CN",
   title: "前端星球",
   description: "Sherwin's 知识宇宙之前端星球",
-  head: [["link", { rel: "icon", href: " /images/main/logo.png" }]],
+  head: [["link", { rel: "icon", href: " /images/logo.png" }]],
   theme: defaultTheme({
-    logo: "/images/main/logo.png",
+    logo: "/images/logo.png",
     navbar: [
       { text: "首页", link: "/" },
       {

@@ -1,8 +1,8 @@
 # 数据可视化之 ECharts 篇
 
-![](/images/docs/data-visualization-echarts-main.png)
+![data-visualization-echarts-main.png](https://www.z4a.net/images/2022/10/05/data-visualization-echarts-main.png)
 
-> [ECharts](https://echarts.apache.org/zh/index.html) 是百度开源的一个使用 JavaScript 实现的可视化库，底层依赖矢量图形库 [ZRender](https://github.com/ecomfe/zrender)，其提供了直观、交互丰富和可高度个性化定制的数据可视化图表，本文主要介绍了 ECharts 的基础功能和基础图表，并给出了相应示例。代码地址 👉 [data-visualization（Github）](https://github.com/sherwinshen/data-visualization)
+> 概述：[ECharts](https://echarts.apache.org/zh/index.html) 是百度开源的一个使用 JavaScript 实现的可视化库，底层依赖矢量图形库 [ZRender](https://github.com/ecomfe/zrender)，其提供了直观、交互丰富和可高度个性化定制的数据可视化图表，本文主要介绍了 ECharts 的基础功能和基础图表，并给出了相应示例。代码地址 👉 [data-visualization（Github）](https://github.com/sherwinshen/data-visualization)
 
 ## 1. 快速上手
 
@@ -67,7 +67,7 @@ ECharts 使用主要分为 5 个步骤：
 
 直角坐标系中有 xAxis（直角坐标系 X 轴）、yAxis（直角坐标系 Y 轴）、grid（直角坐标系底板）等三种组件，其中 xAxis、yAxis 被 grid 自动引用并组织起来，共同工作。
 
-![](/images/docs/charts_axis.jpg)
+![](https://www.z4a.net/images/2022/10/05/charts_axis.jpg)
 
 ```javascript
 const option = {
@@ -98,8 +98,8 @@ const option = {
 };
 ```
 
-| <img src="/images/docs/datav-echarts-axis1.jpg" alt=" " style="zoom:67%;" /> | <img src="/images/docs/datav-echarts-axis2.jpg" alt=" " style="zoom:50%;" /> | <img src="/images/docs/datav-echarts-axis3.jpg" alt=" " style="zoom:45%;" /> |
-| ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| <img src="https://www.z4a.net/images/2022/10/05/datav-echarts-axis1.jpg" alt=" " style="zoom:67%;" /> | <img src="https://www.z4a.net/images/2022/10/05/datav-echarts-axis2.jpg" alt=" " style="zoom:50%;" /> | <img src="https://www.z4a.net/images/2022/10/05/datav-echarts-axis3.jpg" alt=" " style="zoom:45%;" /> |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 
 ### 2.2 数据
 
@@ -107,7 +107,7 @@ const option = {
 
 系列（series）是指一组数值映射成对应的图。
 
-![](/images/docs/datav-echarts-series.jpg)
+![](https://www.z4a.net/images/2022/10/05/datav-echarts-series.jpg)
 
 #### 2.2.2 dataset
 
@@ -116,7 +116,7 @@ const option = {
 1. 确定 dataset 的列还是行映射为 series，默认为 column，通过`series.seriesLayoutBy`配置；
 2. 确定 dataset 的行或列映射到坐标轴（如 X、Y 轴）、提示框（tooltip）、标签（label）、图形元素大小颜色等（visualMap），通过`series.encode`属性，以及 visualMap 组件来配置。
 
-![](/images/docs/datav-echarts-dataset.jpg)
+![](https://www.z4a.net/images/2022/10/05/datav-echarts-dataset.jpg)
 
 ```js
 /* 写法一 */
@@ -168,7 +168,7 @@ option = {
 
 ECharts 中除了绘图之外其他部分，都可抽象为 组件。例如，ECharts 中至少有这些组件：xAxis（直角坐标系 X 轴）、yAxis（直角坐标系 Y 轴）、grid（直角坐标系底板）、angleAxis（极坐标系角度轴）等。
 
-![](/images/docs/datav-echarts-component.jpg)
+![](https://www.z4a.net/images/2022/10/05/datav-echarts-component.jpg)
 
 ```javascript
 const option = {
@@ -477,7 +477,7 @@ echartsInstance.getZr().on("click", function (event) {
 
 折线图更多的使用来呈现数据随时间的『变化趋势』。
 
-<img src="/images/docs/echarts-line.png" alt=" " style="zoom:50%;" />
+<img src="https://www.z4a.net/images/2022/10/05/echarts-line.png" alt=" " style="zoom:50%;" />
 
 ::: details 点击查看代码
 
@@ -558,7 +558,7 @@ echartsInstance.getZr().on("click", function (event) {
 
 堆叠图折线图指同个类目轴上系列配置相同的 stack 值后，后一个系列的值会在前一个系列的值上相加，堆叠柱状图同理。
 
-<img src="/images/docs/echarts-line2.png" style="zoom:50%;" />
+<img src="https://www.z4a.net/images/2022/10/05/echarts-line2.png" style="zoom:50%;" />
 
 ::: details 点击查看代码
 
@@ -607,7 +607,7 @@ echartsInstance.getZr().on("click", function (event) {
 
 柱状图描述的是分类数据，呈现的是每一个分类中『有多少?』, 图表所表达出来的含义在于不同类别数据的排名或对比情况。
 
-<img src="/images/docs/echarts-bar.png" alt=" " style="zoom:50%;" />
+<img src="https://www.z4a.net/images/2022/10/05/echarts-bar.png" alt=" " style="zoom:50%;" />
 
 ::: details 点击查看代码
 
@@ -675,7 +675,7 @@ echartsInstance.getZr().on("click", function (event) {
 
 进阶：[动态排序柱状图](https://echarts.apache.org/zh/tutorial.html#动态排序柱状图)是一种展示随时间变化的数据排名变化的图表，从 ECharts 5 开始内置支持。
 
-![](/images/docs/echarts-bar2.gif)
+![](https://www.z4a.net/images/2022/10/05/echarts-bar2.gif)
 
 ::: details 点击查看代码
 
@@ -759,7 +759,7 @@ echartsInstance.getZr().on("click", function (event) {
 
 散点图可以帮助我们推断出不同维度数据之间的相关性, 散点图也经常用在地图的标注上。
 
-<img src="/images/docs/echarts-scatter.png" alt=" " style="zoom:50%;" />
+<img src="https://www.z4a.net/images/2022/10/05/echarts-scatter.png" alt=" " style="zoom:50%;" />
 
 ::: details 点击查看代码
 
@@ -822,7 +822,7 @@ echartsInstance.getZr().on("click", function (event) {
 
 饼图可以很好地帮助用户快速了解不同分类的数据的占比情况。
 
-<img src="/images/docs/echarts-pie.png" alt=" " style="zoom:50%;" />
+<img src="https://www.z4a.net/images/2022/10/05/echarts-pie.png" alt=" " style="zoom:50%;" />
 
 ::: details 点击查看代码
 
@@ -883,7 +883,7 @@ echartsInstance.getZr().on("click", function (event) {
 
 雷达图可以用来分析多个维度的数据与标准数据的对比情况。
 
-<img src="/images/docs/echarts-radar.png" alt=" " style="zoom:50%;" />
+<img src="https://www.z4a.net/images/2022/10/05/echarts-radar.png" alt=" " style="zoom:50%;" />
 
 ::: details 点击查看代码
 
@@ -943,7 +943,7 @@ echartsInstance.getZr().on("click", function (event) {
 
 仪表盘可以更直观的表现出某个指标的进度或实际情况。
 
-<img src="/images/docs/echarts-gauge.png" alt=" " style="zoom:50%;" />
+<img src="https://www.z4a.net/images/2022/10/05/echarts-gauge.png" alt=" " style="zoom:50%;" />
 
 ::: details 点击查看代码
 

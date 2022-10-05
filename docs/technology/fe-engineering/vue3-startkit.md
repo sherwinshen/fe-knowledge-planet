@@ -1,14 +1,14 @@
 # 前端 Vue3 项目搭建指南
 
-![](/images/docs/vue3-startkit-main.png)
+![vue3-startkit-main.png](https://www.z4a.net/images/2022/10/05/vue3-startkit-main.png)
 
-> 前言：本文主要详细介绍了基于 Vue3 技术栈初始化前端项目的完整流程，包含框架搭建、代码规范、单元测试和自动部署等内容。代码地址 👉 [vue3-project-startkit](https://github.com/sherwinshen/vue3-project-startkit)
+> 概述：本文主要详细介绍了基于 Vue3 技术栈初始化前端项目的完整流程，包含框架搭建、代码规范、单元测试和自动部署等内容。代码地址 👉 [vue3-project-startkit](https://github.com/sherwinshen/vue3-project-startkit)
 
 ## 1. 架构搭建
 
 ### 1.1 技术选型
 
-![](/images/docs/vue3-kit.png)
+![vue3-kit.png](https://www.z4a.net/images/2022/10/05/vue3-kit.png)
 
 - 编程语言：[TypeScript 4.x](https://www.typescriptlang.org/)
 - 前端框架：[Vue 3.x](https://v3.cn.vuejs.org/)
@@ -393,4 +393,4 @@ jobs:
 
 使用方式：我们将内容 push 到 GitHub 上的 master 时就会触发自动部署，构建内容在 gh-pages 分支上（通过 HTTP 的方式访问到这个分支的静态文件资源）
 
-![](/images/docs/git-action.png)
+![git-action.png](https://www.z4a.net/images/2022/10/05/git-action.png)

@@ -1,8 +1,8 @@
 # 数据可视化之 SVG 篇
 
-![](/images/docs/data-visualization-svg-main.png)
+![data-visualization-svg-main.png](https://www.z4a.net/images/2022/10/05/data-visualization-svg-main.png)
 
-> [SVG](https://www.w3school.com.cn/svg/index.asp) 是一种基于 XML 的图像文件格式，它的英文全称为 Scalable Vector Graphics，意思为可缩放的矢量图形，本文主要介绍了一些 SVG 的基础知识并给出相关的案例。代码地址 👉 [data-visualization（Github）](https://github.com/sherwinshen/data-visualization)
+> 概述：[SVG](https://www.w3school.com.cn/svg/index.asp) 是一种基于 XML 的图像文件格式，它的英文全称为 Scalable Vector Graphics，意思为可缩放的矢量图形，本文主要介绍了一些 SVG 的基础知识并给出相关的案例。代码地址 👉 [data-visualization（Github）](https://github.com/sherwinshen/data-visualization)
 
 ## 1. 基础知识
 
@@ -40,7 +40,7 @@
 
 preserveAspectRatio 第一个参数：
 
-<img src="/images/docs/preserveAspectRatio.png" alt=" " style="zoom:35%;" />
+<img src="https://www.z4a.net/images/2022/10/05/svg-preserveAspectRatio.png" alt=" " style="zoom:35%;" />
 
 preserveAspectRatio 第二个参数：
 
@@ -77,7 +77,7 @@ preserveAspectRatio 第二个参数：
 </svg>
 ```
 
-![](/images/docs/svg-transform.png)
+![svg-transform.png](https://www.z4a.net/images/2022/10/05/svg-transform.png)
 
 ### 2.2 动画 SMIL
 
@@ -256,7 +256,7 @@ iconfont 中推荐使用 symbol 方式，查看 👉 [官方帮助文档](https:
 
 :::
 
-<img src="/images/docs/svg-draw-path.gif" alt=" " style="zoom:80%;" />
+<img src="https://www.z4a.net/images/2022/10/05/svg-draw-path.gif" alt=" " style="zoom:80%;" />
 
 ---
 
